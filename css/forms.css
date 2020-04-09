@@ -1,0 +1,44 @@
+input[type=text], input[type=password], select {
+  width: 100%;
+}
+
+label {
+  width: 200px;
+}
+
+input, select, option {
+  height: 40px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+input[type=radio] {
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+input[type=button] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid gray;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+  border: 3px solid #555;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-label {
+  width: 150px;
+}
+
+.form-control {
+  flex-grow: 1
+}

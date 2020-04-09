@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Forms Demo</title>
+	<link href="forms.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1 style="text-align: center">Forms Demo</h1>
+	<hr/>
+
+  <form>
+    <div style="display: flex; flex-direction: column;">
+      <div class="form-group">
+        <div class="form-label">
+          <label for="name">Name</label>
+        </div>
+        <div class="form-control">
+          <input id="name" type="text" placeholder="Enter your name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-label">
+          <label for="password">Password</label>
+        </div>
+        <div class="form-control">
+          <input id="password" type="password" placeholder="Enter your password" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="region" class="form-label">Region</label>
+        <div class="form-control" style="flex-direction: column;">
+          <div style="display: flex;">
+            <div class="form-group form-control">
+              <input type="radio" value="asia" name="region" style="width: auto; margin-right: 10px;" />
+              <span>Asia</span>
+            </div>
+            <div class="form-group form-control">
+              <input type="radio" value="emea" name="region" style="width: auto; margin-right: 10px;" /> EMEA
+            </div>
+          </div>
+          <div style="display: flex">
+            <div class="form-group form-control">
+              <input type="radio" value="america" name="region" style="width: auto; margin-right: 10px;" /> America
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-label">
+          <label for="country">Country</label>
+        </div>
+        <div class="form-control">
+          <select name="country">
+            <option value="">Select country...</option>
+            <option value="america">America</option>
+            <option value="india">India</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-label"></div>
+        <div>
+          <input type="button" value="Register" />
+        </div>
+      </div>
+    </div>
+  </form>
+  </body>
+</html>
