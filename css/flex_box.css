@@ -1,0 +1,66 @@
+.flex-container1 {
+  height: 300px;
+  background-color: lightgray;
+  border: 1px solid greenyellow;
+
+  /* display as flex */
+  display: flex;
+
+  /* should flex items be wrapped to new line? */
+  flex-wrap: wrap-reverse;
+
+  /* direction to stack flex items */
+  flex-direction: row-reverse;
+
+  /* shorthand for (flex-wrap + flex-direction) */
+  flex-flow: wrap-reverse row-reverse;
+
+  /* align flex items horizontally w.r.t flex container */
+  justify-content: center;
+
+  /* align flex items horizontally w.r.t. neighbour items */
+  justify-items: center;
+
+  /* align flex lines (whole flex items in line) vertically w.r.t flex container */
+  align-content: center;
+
+  /* align flex items vertically w.r.t. neighbour items */
+  align-items: baseline;
+}
+
+.flex-container2 {
+  background-color: lightgray;
+  border: 1px solid greenyellow;
+  display: flex;
+  height: 150px;
+}
+
+.flex-item {
+  background-color: gainsboro;
+  border: 1px dotted goldenrod;
+}
+
+.flex-grow-1 {
+  /* how much flex item will GROW relative to the rest of the items */
+  flex-grow: 4;
+}
+
+.flex-shrink {
+  /* how much flex item will SHRINK relative to the rest of the items */
+  flex-shrink: 0; /* do not allow to shrink */
+}
+
+.flex-basis {
+  /* initial additional width of a flex item */
+  flex-basis: 200px;
+}
+
+.flex {
+  /* flex-grow + flex-shrink + flex-basis */
+  flex: 4 0 200px;
+}
+
+.align-self {
+  /* overrides align-items; vertical alignment of flex item inside flexible container */
+  align-self:flex-end;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Flex Box Demo</title>
+    <link href="flex_box.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">Flex Box Demo</h1>
+    <hr/>
+
+    <p></p>
+    <div class="flex-container1">
+      <div class="flex-item" style="width: 150px; height: 150px;">1). 150 X 150</div>
+      <div class="flex-item" style="width: 150px; height: 100px;padding-top: 20px;">2). 150 X 100 - baseline effect - align to text line</div>
+      <div class="flex-item" style="width: 100px; height: 150px;">3). 100 X 150</div>
+      <div class="flex-item flex-grow" style="order: 1;">
+        <p>4. No height/width</p>
+        <p>order=1</p>
+        <p>flex-grow:1 takes remaining space</p>
+      </div>
+      <div class="flex-item" style="width: 100px; height: 100px;">5). 100 X 100</div>
+    </div>
+
+    <hr/>
+
+    <div class="flex-container2">
+      <div class="flex-item flex-grow-1 flex-basis align-self" style="height:40%;">A</div>
+      <div class="flex-item flex-grow-1">B</div>
+    </div>
+  </body>
+</html>
